@@ -1,3 +1,4 @@
+// for sidebar//
 const sidebar = document.getElementById('sidebar');
 const toggleBtn = document.getElementById('toggle-btn');
 const main =document.getElementById('main');
@@ -5,32 +6,21 @@ const main =document.getElementById('main');
 toggleBtn.addEventListener('click', () => {
   if (sidebar.style.left === '-250px') {
     sidebar.style.left = '0px';
-      // main.style.left ='0px';
+     
       
 
   } else {
     sidebar.style.left = '-250px';
-    // main.style.left ='-211px';
+    
    
-    
-    
   }
 });
 
 
 
-function toggleSubMenu(subMenuId) {
-    const subMenu = document.getElementById(subMenuId);
-    if (subMenu.style.display === "block") {
-        subMenu.style.display = "none";
-    } else {
-        subMenu.style.display = "block";
-    }
-}
 
 
-
-
+// for fetching and display data through api//
 let API ="AIzaSyChIJFgED1diOgVOT5Bqe5woJdW8zdMmvs";
 async function mostpopular(){
   let res =await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&chart=mostPopular&regionCode=IN&key=${API}`);
@@ -43,27 +33,11 @@ async function mostpopular(){
 }
 
 mostpopular();
-// const box = document.querySelector(".box");
-// let img =document.getElementById("image");
-// let title =document.getElementById("title");
-// let channel =document.getElementById("channel");
-// const Data =(data)=>{
 
-//  data.forEach(({snippet, id:{videoId} })=> {
- 
-
-//   box.innerHTML =`<div class="box">
-//   <img id="image"src="${snippet.thumbnails.high.url}"/>
-//   <h2 id="title">${snippet.title}</h2>
-//   <p id="channel">${snippet.channelTitle}</p>
-  
-
-//  </div>`
-//  });
-// }
 
 function append(data){
   let box = document.querySelector(".container");
+  box.innerHTML =null;
   data.forEach(({snippet, id:{videoId} })=> {
     let img =snippet.thumbnails.high.url;
     let title =snippet.title;
@@ -96,5 +70,19 @@ function append(data){
 
 
 //  https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc&key=[YOUR_API_KEY]
+
+
+
+
+// for searching//
+
+async function search(){
+  let query =document.getElementById("query").value;
+  let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${query}&key=${API}`);
+  let data = await res.json();
+  append(data.items);
+}
+// https://youtube.googleapis.com/youtube/v3/search?maxResults=50&q=${query}&key=${API}
+
 
 
