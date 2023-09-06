@@ -9,7 +9,7 @@
 <body>
 
     <div class="menubar">
-        <div ><img id="toggle-btn" src="menu.png"/></div>
+        <div ><img id="toggle-btn" src="images/menu.png"/></div>
         <yt-icon id="logo-icon" class="style-scope ytd-logo"><!--css-build:shady--><!--css-build:shady--><yt-icon-shape class="style-scope yt-icon"><icon-shape class="yt-spec-icon-shape"><div style="width: 100%; height: 100%; fill: currentcolor;"><svg class="external-icon" viewBox="0 0 90 20" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -30,34 +30,15 @@
           </svg>
         </svg></div></icon-shape></yt-icon-shape></yt-icon>
 
-        <input type="search" placeholder="Search here">
-        <img id="id1" src="voice-search.png" alt="">
+        <input type="search" id="query" oninput="search()" placeholder="Search here">
+        <img id="id1" src="search.png" alt="">
         <img id="id2" src="megan.png" alt="">
-        <!-- <div class="menu-item" onclick="toggleSubMenu('sub-menu-1')">Menu 1</div>
-        <div class="menu-item" onclick="toggleSubMenu('sub-menu-2')">Menu 2</div>
-        <div class="menu-item" onclick="toggleSubMenu('sub-menu-3')">Menu 3</div> -->
+      
     </div>
     
-    <!-- <div class="sub-menu" id="sub-menu-1">
-        <div class="sub-menu-item">Submenu Item 1-1</div>
-        <div class="sub-menu-item">Submenu Item 1-2</div>
-        <div class="sub-menu-item">Submenu Item 1-3</div>
-    </div>
+   
     
-    <div class="sub-menu" id="sub-menu-2">
-        <div class="sub-menu-item">Submenu Item 2-1</div>
-        <div class="sub-menu-item">Submenu Item 2-2</div>
-        <div class="sub-menu-item">Submenu Item 2-3</div>
-    </div>
-    
-    <div class="sub-menu" id="sub-menu-3">
-        <div class="sub-menu-item">Submenu Item 3-1</div>
-        <div class="sub-menu-item">Submenu Item 3-2</div>
-        <div class="sub-menu-item">Submenu Item 3-3</div>
-    </div> -->
-
-    
-
+<!-- sidebar -->
     <div class="sidebar" id="sidebar">
       <a href="#">Home</a>
       <a href="#">About</a>
@@ -65,16 +46,13 @@
       <a href="#">Contact</a>
     </div>
    
+    <!-- container -->
 <div class="container">
   
 
   </div>
-  <!-- <div class="sidebar" id="sidebar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </div> -->
+ 
   <script src="sidebar.js"></script>
 </body>
 </html>
+
