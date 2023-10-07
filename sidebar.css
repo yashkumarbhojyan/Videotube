@@ -18,7 +18,7 @@ body {
 }
 #toggle-btn{
     cursor: pointer;
-    height: 2vw;
+    height: 1.5vw;
     padding: 8px;
     color: #eee;
 }
@@ -27,8 +27,9 @@ body {
   position: fixed;
   height: 28px;
   padding: 8px;
-  left: 4vw;
+  left: 2vw;
 }
+
 .menubar input{
   position: relative;
   margin-left: 23vw;
@@ -45,7 +46,7 @@ body {
 .menubar #id1{
   height: 3vh;
   position: relative;
-  left:-27vw;
+  left:-29vw;
   
 
  
@@ -55,9 +56,12 @@ body {
   height: 5vh;
   padding-top: 3px;
   position: relative;
- 
   
-  
+}
+.menubar #id3{
+  height: 3vh;
+  position:relative;
+  left:-28vw;
 }
 
 
@@ -107,6 +111,8 @@ body {
   
 }
 
+
+
   .sidebar {
     height: 100vh;
     width: 240px;
@@ -119,7 +125,30 @@ body {
     transition: left 0.3s ease-in-out;
     /* margin-top: 2vh; */
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
   }
+ .sidebar h5{
+  border-top: 2px solid #ccc;
+  padding-left: 10px;
+  padding-top: 5px;
+  opacity: .7;
+ }
+
+  ::-webkit-scrollbar{
+    width: 5px;
+   
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+  }
+
+  /* .scrollbox{
+    overflow: auto;
+  } */
+
   
   .sidebar a {
     padding: 15px;
@@ -132,6 +161,9 @@ body {
   .sidebar a:hover {
     color: white;
   }
+
+ 
+
   
   /* .main{
     height:100vh;  
@@ -167,15 +199,15 @@ body {
   #toggle-btn{
     position:relative;
 
-    height: 4vw;
+    height: 4.5vw;
     /* padding-right: 5vw; */
   }
   #logo-icon{
     position:fixed;
-    height: 25px;
+    height: 21.5px;
     margin-right: 10px;
     /* background-color: red; */
-    left:9vw
+    left:6vw
   }
   .menubar input{
     position:relative;
@@ -185,7 +217,7 @@ body {
     height: 25px;
     border:  solid 1px;
     text-decoration: none;
-    left:32vw;
+    left:29vw;
     align-items: center;
     
   
@@ -198,10 +230,10 @@ body {
     height: 8vh;
 } 
 .menubar #id1{
-  /* height: 2vh;
+  height: 2.2vh;
   position: relative;
-  left:-24vw; */
-  display: none;
+  left:-6vw;
+  /* display: none; */
   
   
 }
@@ -209,11 +241,15 @@ body {
   height: 3.5vh;
   position: relative;
   right:10px;
-
- 
-  
-  
 }
+  .menubar #id3{
+    height: 3vh;
+    position:relative;
+    left:-4vw;
+  }
+  
+  
+
 .sidebar{
   position: fixed;
 }
@@ -262,4 +298,11 @@ body {
     
   }
 }
-  
+
+#preloader{
+  background: #fff url(loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
