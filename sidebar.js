@@ -1,3 +1,4 @@
+
 // for sidebar//
 const sidebar = document.getElementById('sidebar');
 const toggleBtn = document.getElementById('toggle-btn');
@@ -15,6 +16,7 @@ toggleBtn.addEventListener('click', () => {
    
   }
 });
+
 
 
 
@@ -82,7 +84,25 @@ async function search(){
   let data = await res.json();
   append(data.items);
 }
+
+
 // https://youtube.googleapis.com/youtube/v3/search?maxResults=50&q=${query}&key=${API}
 
 
+let loader = document.getElementById("preloader");
 
+window.addEventListener("load",function(){
+  loader.style.display="none";
+
+})
+
+
+function voice(){
+  var recognition = new webkitSpeechRecognition();
+  recognition.lang="en-GB";
+  recognition.onresult= function(event){
+    console.log(event);
+    document.getElementById("query").value = event.results[0][0].transcript;
+  }
+  recognition.start();
+}
