@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="sidebar.css">
-  <title>Sidebar Example</title>
+  <title>Youtube</title>
+  <link
+  rel="icon"
+  type="image"
+  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACOCAMAAADQI8A6AAAAZlBMVEX/AAD/////fn7/X1//Vlb/9fX/SUn/3Nz/6Oj/HBz/+fn/7u7/qqr/zs7/8fH/cXH/Zmb/UVH/vb3/sLD/bW3/QkL/l5f/4+P/MDD/JSX/i4v/hYX/NTX/1NT/trb/W1v/Dw//xMRLyT8jAAACw0lEQVR4nO3b6VarMBQF4NDWggyFMilDB9//JW+wvUuSwtGGSPa96+x/LlfjZwlkOggPKsI1QA1zqDCHCnOoMIcKc6gwhwpzqDCHCnOoMIcKc6hY4IQv94RrcEKZQxRFpyQ/F3Fct12aZtvPXHZDjvt7jp8/Xm6/y9K0a+s4Ls55cpIfPwztmHPCIMkL+bfLY9VfhYVc++pYSmGRJ8Gsa4oT+XHWN40VxCSsafos9qMfcfy2/y2Hmr71v+X45TqWW0odpHHyZk2NEE1Ocep1MUPqeU63vkaIbo5zdqER4jzNObnRCHGa5OxccXZTnNyVRoh8grPqA0dN+cgJ3GmECB44jm6rW84PnNQlJ9U5YeWSU4Ua5+3dJef9TeMkLjVCJBqncMspNI6DsXycWuM4fAgOKTXO3i1nr3HcaoSA5jgdsYYECsdg6lVZXf+cFI7BU7ALbE6tE4UTP9/AxuqiLFY4Bk/BzfC5D1vrslrhbAw58nu9WuFsLHG8qLMBUjkGk6+/HNmFtss5qcIxaPCLI2/MxWPMdswJL8s43ovBrankEtrkSFALxZHzW4NGpjkHg2v/wJFdyHz+vz+MOJFBOxMcOcc1HciqaMQJDFqZ5HiRYRfqgxHHZFkzzZEgo4HsvrSxz5FdyOC7Vji+wUg4z5Fd6Ol/r/HHnFe7HC9sn2zx9Vc58vpnUBzZ6JE5/8TFWtiVsW50sMcg2CABNoSCTTDApl9gk9P/bepud2EDtuxDWxSDbRmAbaiAbTeBbcaBbVWCbeSCbXODHQKgccAOkMCO18AOH8GOZsEOrsGO9cGKHsBKQtAKZsDKicCKrdBK0cAK9dDKGMGKPD1v2TLbMK03xwErEEYrn0YrLvfASu+HQL2YcA/OaxuaC+Kllp9n3Vd+Vg1zqDCHCnOoMIcKc6gwhwpzqDCHCnOoMIcKc6iAcf4AQflIBcl6rnoAAAAASUVORK5CYII="
+  href=""
+  />
 </head>
 <body>
 
+  <div id="preloader"></div>
     <div class="menubar">
-        <div ><img id="toggle-btn" src="menu.png"/></div>
+        <div ><img id="toggle-btn" src="hamburger.png"/></div>
         <yt-icon id="logo-icon" class="style-scope ytd-logo"><!--css-build:shady--><!--css-build:shady--><yt-icon-shape class="style-scope yt-icon"><icon-shape class="yt-spec-icon-shape"><div style="width: 100%; height: 100%; fill: currentcolor;"><svg class="external-icon" viewBox="0 0 90 20" focusable="false" style="pointer-events: none; display: block; width: 100%; height: 100%;">
           <svg viewBox="0 0 90 20" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -30,20 +37,42 @@
           </svg>
         </svg></div></icon-shape></yt-icon-shape></yt-icon>
 
-        <input type="search" id="query" oninput="search()" placeholder="Search here">
-        <img id="id1" src="search.png" alt="">
+       
+        <input type="search" id="query"  placeholder="Search" >
+        <img id="id1" onclick="search()" src="search.png" alt="">
+        <img id="id3" onclick="voice()" src="voice-search.png" alt="">
         <img id="id2" src="megan.png" alt="">
       
     </div>
     
-   
+    <!-- oninput="search()" -->
     
 <!-- sidebar -->
     <div class="sidebar" id="sidebar">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <!-- <div class="scrollbox"> -->
+       
+      
+      <a href="#"><span><img src="home.png" style="height: 15px; margin-right:5px;"></span>Home</a>
+    
+      <a href="https://www.youtube.com/feed/subscriptions"><span><img src="subscriprion.png" style="height: 15px; margin-right:5px;"></span>Subscriptions</a>
+      <a href="https://www.youtube.com/playlist?list=LL"><span><img src="like.png" style="height: 15px; margin-right:5px;"></span>Liked videos</a>
+      <a href="https://www.youtube.com/feed/history"><span><img src="history.png" style="height: 15px; margin-right:5px;"></span>History</a>
+      <div class="line"></div>
+      <h5>Explore</h5>
+      <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl"><span><img src="explore.png" style="height: 15px; margin-right:5px;"></span>Trending</a>
+      <a href="https://www.youtube.com/channel/UCkYQyvc_i9hXEo4xic9Hh2g"><span><img src="shopping-bag.png" style="height: 15px; margin-right:5px;"></span>Shopping</a>
+      <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"><span><img src="musical-note.png" style="height: 15px; margin-right:5px;"></span>Music</a>
+      <a href="https://www.youtube.com/feed/storefront?bp=ogUCKAI%3D"><span><img src="clapper.png" style="height: 15px; margin-right:5px;"></span>films</a>
+      <a href="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"><span><img src="live.png" style="height: 15px; margin-right:5px;"></span>Live</a>
+      <a href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><span><img src="newspaper.png" style="height: 15px; margin-right:5px;"></span>News</a>
+      <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><span><img src="trophy.png" style="height: 15px; margin-right:5px;"></span>Sports</a>
+      <h5>More from Youtube</h5>
+      <a href="https://www.youtube.com/premium"><span><img src="play.png" style="height: 15px; margin-right:5px;"></span>Youtube premium</a>
+      <a href="https://studio.youtube.com/"><span><img src="studio.png" style="height: 15px; margin-right:5px;"></span>Youtube studio</a>
+      <a href="https://music.youtube.com/"><span><img src="youtube music.png" style="height: 15px; margin-right:5px;"></span>Youtube music</a>
+      <a href="https://www.youtubekids.com/?source=youtube_web"><span><img src="youtube-kids.png" style="height: 15px; margin-right:5px;"></span>youtube kids</a>
+    
+     <!-- </div>  -->
     </div>
    
     <!-- container -->
@@ -55,4 +84,3 @@
   <script src="sidebar.js"></script>
 </body>
 </html>
-
