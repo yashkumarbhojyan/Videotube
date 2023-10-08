@@ -37,19 +37,19 @@ body {
     width: 42vw;
    display: flex;
   align-items: center;
-   overflow-x: hidden;  
+   overflow: hidden;  
    
 }
 .search-wrapper #id1{
   padding:.5vh 1vh;
   background-color: whitesmoke;
-  height: 3.0vh;
+  height: 3.5vh;
   width: 2vw;
 }
 .search-wrapper input {
   height: 100%;
   width: 100%;
-  padding-left: 19vw;;
+  padding-left: 10px;
    border: none;
   outline: none; 
 }
