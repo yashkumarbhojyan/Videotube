@@ -216,7 +216,7 @@ body {
   }
 
 .search-wrapper #id1{
-  padding:4.5px;
+  padding:4px;
   background-color:none;
   height: 1.8vh;
   width: 14px;
@@ -229,7 +229,7 @@ body {
 }
   .menubar #id3{
     height: 2.9vh;
-    width: 14px;
+    width: 16px;
     position:relative;
     left:0vw;
   }
