@@ -25,7 +25,7 @@ body {
 #logo-icon{
   /* position:absolute; */
   position: fixed;
-  height: 60px;
+  height: 70px;
   padding: 8px;
   left: 2vw;
 }
@@ -42,9 +42,9 @@ body {
 }
 .search-wrapper #id1{
   padding:.5vh 1vh;
-  background-color: #ccc;
+  background-color: whitesmoke;
   height: 3.0vh;
-  width: 2.2vw;
+  width: 2vw;
 }
 .search-wrapper input {
   height: 100%;
@@ -66,7 +66,9 @@ body {
 }
 .search-or-microphone #id3{
   /* font-size: 20px; */
-  height: 2.4vw;
+  position: relative;
+  height: auto;
+  width: auto;
   width: 1.5vw;
   padding-left: 1vw;
 }
@@ -204,23 +206,23 @@ body {
   }
   #logo-icon{
     position:fixed;
-    height: 50px;
+    height: 60px;
     margin-right: 10px;
     /* background-color: red; */
     left:6vw
   }
   .search-wrapper{
-    width: 35vw;
-    height: 25px;
-    overflow-x: hidden; 
+    width: 28vw;
+    height: 27px;
+    overflow: hidden;
   }
 
 .search-wrapper #id1{
-  padding:4px;
-  background-color:none;
-  height: 1.8vh;
-  width: 14px;
-  
+  position: relative;
+  background-color:whitesmoke;
+  height:auto;
+  width: auto;
+ 
 }
 .menubar #id2{
   height: 3.5vh;
@@ -228,9 +230,10 @@ body {
   right:10px;
 }
   .menubar #id3{
-    height: 2.9vh;
-    width: 16px;
+    height: 3vh;
+    width: 14px;
     position:relative;
+    width: auto;
     left:0vw;
   }
   .search-wrapper input {
@@ -239,7 +242,7 @@ body {
     padding-left: 2vw;;
      border: none;
     outline: none; 
-   
+    
   }
   
   
