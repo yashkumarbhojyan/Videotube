@@ -210,8 +210,9 @@ body {
     left:6vw
   }
   .search-wrapper{
-    width: 32vw;
-    height: 24px;
+    width: 35vw;
+    height: 25px;
+    overflow-x: hidden; 
   }
 
 .search-wrapper #id1{
@@ -219,7 +220,7 @@ body {
   background-color:none;
   height: 1.8vh;
   width: 14px;
-  z-index: 0;
+  
 }
 .menubar #id2{
   height: 3.5vh;
@@ -227,8 +228,8 @@ body {
   right:10px;
 }
   .menubar #id3{
-    height: 3vh;
-    width: 12px;
+    height: 2.9vh;
+    width: 14px;
     position:relative;
     left:0vw;
   }
@@ -238,7 +239,7 @@ body {
     padding-left: 2vw;;
      border: none;
     outline: none; 
-    z-index: 1;
+   
   }
   
   
