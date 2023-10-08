@@ -210,15 +210,15 @@ body {
     left:6vw
   }
   .search-wrapper{
-    width: 28vw;
-    height: 20px;
+    width: 32vw;
+    height: 24px;
   }
 
 .search-wrapper #id1{
   padding:4.5px;
   background-color:none;
   height: 1.8vh;
-  width: 15px;
+  width: 14px;
   z-index: 0;
 }
 .menubar #id2{
